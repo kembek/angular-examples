@@ -1,0 +1,22 @@
+<h2>My heroes</h2>
+
+<div>
+  <label>Hero name: <input #heroName/></label>
+  <button (click)="add(heroName.value); heroName.value = ''">add</button>
+</div>
+
+<div class="heroes">
+  <div *ngFor="let hero of heroes">
+    <a class="hero" routerLink="/detail/{{ hero.id }}">
+      <span class="hero__id">{{ hero.id }}</span>
+      <span class="hero__name">{{ hero.name }}</span>
+      <img
+        class="avatar avatar--circle avatar--small hero__avatar"
+        *ngIf="hero.avatar"
+        [src]="hero.avatar"
+        [alt]="hero.name"
+      />
+    </a>
+    <button (click)="delete(hero)">Delete</button>
+  </div>
+</div>

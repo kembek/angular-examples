@@ -1,0 +1,7 @@
+<section>
+  <h2>Top Heroes</h2>
+  <a *ngFor="let hero of topHeroes" routerLink="/detail/{{ hero.id }}">
+    <app-hero-card [name]="hero.name"></app-hero-card>
+  </a>
+</section>
+<app-hero-search></app-hero-search>
