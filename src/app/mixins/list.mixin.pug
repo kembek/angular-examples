@@ -1,0 +1,17 @@
+mixin list(count = 5)
+  ul
+    while count > 0
+      li 
+        span #{count}
+        br
+        span lol
+        - --count
+        -
+        br
+        span foo
+
+mixin listSecond
+  ul
+    li foo
+    li bar
+    li baz

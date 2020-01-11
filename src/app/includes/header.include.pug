@@ -1,0 +1,35 @@
+- const userName = 'Luke Skywalker';
+- const title = 'lol';
+- const author = "enlore";
+- const theGreat = "<span>escape!</span>";
+
+
+h2 Header 
+  br
+  span Lorem ipsum dolor sit amet.
+
+
+- for(let s = 0; s < 3; ++s)
+p Paragraph #{s + 1}
+-
+
+br
+hr
+br
+
+span lol
+p= userName
+
+include ../mixins/list.mixin.pug
+
++listSecond
+
+br
+hr
+
+
+h1= title
+
+p Written with love by #{author}
+
+p This will be safe: #{theGreat}

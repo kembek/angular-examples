@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-examples": {
+    "ng-pug": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-examples",
+            "outputPath": "dist/ng-pug",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-examples:build"
+            "browserTarget": "ng-pug:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-examples:build:production"
+              "browserTarget": "ng-pug:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-examples:build"
+            "browserTarget": "ng-pug:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-examples:serve"
+            "devServerTarget": "ng-pug:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-examples:serve:production"
+              "devServerTarget": "ng-pug:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-examples"
+  "defaultProject": "ng-pug"
 }

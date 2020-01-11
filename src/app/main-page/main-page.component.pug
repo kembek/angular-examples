@@ -1,0 +1,55 @@
+- let isToggle = true
+- let square = 100
+- let pxUnit = 'px'
+- let humanClass = 'human'
+
+style(type='text/css').
+  h1 {
+    color: red;
+  }
+
+  .is-toggle {
+    background: linear-gradient(45deg, rgba(255, 0, 0, .4), rgba(0, 0, 0, .1));
+    //- background: linear-gradient(45deg, black, transparent);
+  }
+
+  .box {
+    width: #{square + pxUnit};
+    height: #{square + pxUnit};
+    background-image: radial-gradient(yellow, blue);
+  }
+
+  .human {
+    background: orange;
+    width: #{square + pxUnit};
+    height: #{square + pxUnit};
+  }
+
+a(routerLink='/login') Login form
+br
+br
+br
+a(routerLink="/profile") Profile page
+
+h1((click)="handleClick('user')" '[ngStyle]'="{background: 'black'}") Hello Word
+h2 Hello word
+h3 Hello word
+h4 hello word
+h5 Hello word
+h6 Hello word
+
+p Lorem ipsum dolor sit amet.
+
+br
+span('(click)'='handleClick()', style="cursor: pointer;") Click me
+br/
+hr
+span Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ullam doloribus officia. 
+  span Lorem ipsum dolor sit.
+
+p(class=isToggle ? "is-toggle" : "" data-user="Luke") fsdjskhdksjshdjk #[span jksdfshdkjjd] #[b]
+p: a(href="" class="" ) sdjkfsdsd
+
+div(class='box' '(click)'='handleClick("male")')
+hr
+div(class=humanClass)
