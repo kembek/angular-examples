@@ -1,0 +1,12 @@
+.post {
+  border: 3px dotted #000;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px auto 5px auto;
+  width: 400px;
+  min-height: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
