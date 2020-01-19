@@ -1,0 +1,14 @@
+div {
+  button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+    &.active {
+      background-color: green;
+    }
+  }
+}
