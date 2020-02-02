@@ -1,0 +1,8 @@
+tsconfig: ./tsconfig.docs.json
+output: ./dist/docs
+name: Angular example documentation
+theme: material
+hideGenerator: true
+disablePrivate: true
+disableInternal: true
+disableCoverage: true
