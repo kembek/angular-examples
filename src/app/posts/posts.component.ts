@@ -10,7 +10,11 @@ import { ActivatedRoute, Router, Params } from "@angular/router";
 export class PostsComponent implements OnInit {
   showId = false;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
+  constructor(
+    private postsService: PostsService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
