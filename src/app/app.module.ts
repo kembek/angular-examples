@@ -7,7 +7,8 @@ import { FormsModule } from "@angular/forms";
 import { PostsComponent } from "./posts/posts.component";
 import { RoutingComponent } from "./routing/routing.component";
 import { RouterModule } from "@angular/router";
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { ColorDirective } from "./directives/color.directive";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     CounterComponent,
     PostsComponent,
     RoutingComponent,
-    NavBarComponent
+    NavBarComponent,
+    ColorDirective
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot([])],
   providers: [],
