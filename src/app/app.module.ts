@@ -7,13 +7,15 @@ import { FormsModule } from "@angular/forms";
 import { PostsComponent } from "./posts/posts.component";
 import { RoutingComponent } from "./routing/routing.component";
 import { RouterModule } from "@angular/router";
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     PostsComponent,
-    RoutingComponent
+    RoutingComponent,
+    NavBarComponent
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot([])],
   providers: [],
